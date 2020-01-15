@@ -1,6 +1,7 @@
 # ExAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+Working example for jexcel 'https://bossanova.uk/jexcel/v3/' for angular.
+Jexcel is wrriten in pure javascript. For using jexcel in angular (typescript), necessary type definations are added in this project.
 
 ## Development server
 
