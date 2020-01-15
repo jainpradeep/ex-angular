@@ -10,8 +10,8 @@ export class ExAngularComponent implements AfterViewInit {
   @Input() name: string;
   @Input() surname: string;
   data = [
-    ['Jazz', 'Honda', '2019-02-12', '', true, '$ 2.000,00', '#777700'],
-    ['Civic', 'Honda', '2018-07-11', '', true, '$ 4.000,01', '#007777'],
+    ['Prj1', 'ERPL', '2019-02-12', '', true, '2.000,00'],
+    ['Prj2', 'SRPL', '2018-07-11', '', true, '4.000,01'],
 ];
 constructor() { }
 
@@ -20,14 +20,13 @@ ngAfterViewInit() {
   jexcel(document.getElementById('spreadsheet'), {
     data: this.data,
     columns: [
-        { type: 'text', title: 'Car', width: 120 },
-        { type: 'dropdown', title: 'Make', width: 200, source: [ 'Alfa Romeo', 'Audi', 'Bmw' ] },
+        { type: 'text', title: 'Project', width: 120 },
+        { type: 'dropdown', title: 'Select', width: 200, source: [ 'S1', 'S2', 'S3' ] },
         { type: 'calendar', title: 'Available', width: 200 },
-        { type: 'image', title: 'Photo', width: 120 },
-        { type: 'checkbox', title: 'Stock', width: 80 },
-        { type: 'numeric', title: 'Price', width: 100, mask: '$ #.##,00', decimal: ',' },
-        { type: 'color', width: 100, render: 'square', }
-     ]
+        { type: 'image', title: 'img', width: 120 },
+        { type: 'checkbox', title: 'Check', width: 80 },
+        { type: 'numeric', title: 'Cost', width: 100, decimal: ',' },
+      ]
 });
 }
 
