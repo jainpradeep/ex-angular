@@ -24,7 +24,7 @@
     "@angular/router": "~8.1.1",
     "@webcomponents/custom-elements": "^1.2.4",
     "jexcel": "^3.3.0",
-    "jsuites": "^2.1.0",
+    "jsuites": "^4.9.11",
     "rxjs": "^6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
